@@ -6,6 +6,8 @@ import { themeReducer } from './features/theme/theme-slice';
 import { controlsReducer } from './features/controls/controls-slice';
 import { countryReducer } from './features/countries/countries-slice';
 import { detailsReducer } from './features/details/details-slice';
+import { currenciesReducer } from './features/currencies/currencies-slice';
+import { carriersReducer } from './features/carriers/carriers-slice';
 
 export const store = configureStore({
   reducer: {
@@ -13,6 +15,8 @@ export const store = configureStore({
     controls: controlsReducer,
     countries: countryReducer,
     details: detailsReducer,
+    currencies: currenciesReducer,
+    carriers: carriersReducer,
   },
   devTools: true,
   middleware: (getDefaultMiddlware) => getDefaultMiddlware({

@@ -2,6 +2,7 @@
   "name": "flags",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8090",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
     "axios": "^0.22.0",
