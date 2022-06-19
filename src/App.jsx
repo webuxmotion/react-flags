@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Header } from './components/Header';
+import { HeaderContainer } from './containers/Header.container';
 import { Main } from './components/Main';
 
 import { HomePage } from './pages/HomePage';
@@ -10,7 +10,7 @@ import { NotFound } from './pages/NotFound';
 function App() {
   return (
     <>
-      <Header />
+      <HeaderContainer />
       <Main>
         <Routes>
           <Route exact path="/" element={

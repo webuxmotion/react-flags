@@ -4,7 +4,6 @@ import { Search } from './Search';
 import { CustomSelect } from './CustomSelect';
 import { useRegion } from './use-region';
 
-
 const optionsMap = {
   'Africa': { value: 'Africa', label: 'Africa' },
   'America': { value: 'America', label: 'America' },

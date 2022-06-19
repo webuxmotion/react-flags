@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { List } from '../../components/List';
 import { Card } from '../../components/Card';
 import { useCountries } from './use-countries';
-
+import { statuses } from '../../constants/statuses';
 
 const CountryList = () => {
   const navigate = useNavigate();
@@ -13,9 +13,9 @@ const CountryList = () => {
   return (
     <>
       {error && <h2>Can't fetch data</h2>}
-      {status === 'loading' && <h2>Loading...</h2>}
+      {status === statuses.LOADING && <h2>Loading...</h2>}
 
-      {status === 'received' && (
+      {status === statuses.RECEIVED && (
       <List>
         {countries.map((c) => {
           const countryInfo = {
